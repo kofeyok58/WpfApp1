@@ -7,8 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Далее" HorizontalAlignment="Left" Margin="462,342,0,0" VerticalAlignment="Top" Width="321" Height="69" Click="Button_Click"/>
-        <Image Source="\Users\user\Downloads\1-depositphotos-11856682-l-2015.jpg" HorizontalAlignment="Left" Height="223" Margin="170,53,0,0" VerticalAlignment="Top" Width="336" RenderTransformOrigin="0.5,0.5">
+        <Menu Height="20" VerticalAlignment="Top">
+            <MenuItem Header="Файл" Click="MenuItem_Click">
+                <MenuItem.Icon>
+                    <Image Source="C:\Users\user\Downloads\icon.png"></Image>
+                </MenuItem.Icon>
+                <MenuItem Header="Следущее" Click="MenuItem_Click_2"></MenuItem>
+                <MenuItem Header="Предыдущее" Click="MenuItem_Click_1"></MenuItem>
+                <MenuItem Header="Сохранить"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+
+        </Menu>
+        <Button Content="Далее" HorizontalAlignment="Left" Margin="655,381,0,0" VerticalAlignment="Top" Width="128" Height="30" Click="Button_Click"/>
+        <Image x:Name="DisplayImageForm" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
