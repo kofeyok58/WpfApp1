@@ -16,6 +16,7 @@
                 <MenuItem Header="Предыдущее" Click="MenuItem_Click_1"></MenuItem>
                 <MenuItem Header="Сохранить"></MenuItem>
                 <Separator></Separator>
+                <MenuItem Header="Окно с TextBox" Click="MenuItem_Click_3"></MenuItem>
                 <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
 

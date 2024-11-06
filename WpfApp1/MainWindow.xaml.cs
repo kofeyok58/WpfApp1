@@ -34,7 +34,7 @@ namespace WpfApp1
 
         private void LoadImages(string path)
         {
-            if (Directory.Exists(path)
+            if (Directory.Exists(path))
             {
                 imagesStore = new List<string>(Directory.GetFiles((path), "*.jpg"));
                 imagesStore.AddRange(Directory.GetFiles((path), "*.png"));
@@ -63,17 +63,38 @@ namespace WpfApp1
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+           // Application.Current.Shutdown();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-
+            //Back image
+            if (imagesStore == null || imagesStore.Count == 0)
+            {
+                MessageBox.Show("Двлее нет картинок");
+                return;
+            }
+            currentIndex = (currentIndex - 1 + imagesStore.Count) % imagesStore.Count;
+            DisplayImage();
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
+            //Next image
+            if(imagesStore == null || imagesStore.Count == 0)
+            {
+                MessageBox.Show("Двлее нет картинок");
+                return;
+            }
+            currentIndex = (currentIndex + 1) % imagesStore.Count;
+            DisplayImage();
+        }
 
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close();
         }
     }
 }
