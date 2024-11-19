@@ -6,7 +6,41 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
+        <StackPanel>
+            <TextBlock Name="question1" Text="1. Что из этого языки программирования?"></TextBlock>
+            <CheckBox Name="checkBox1" IsChecked="False" Content="Python"></CheckBox>
+            <CheckBox Name="checkBox2" IsChecked="False" Content="Html"></CheckBox>
+            <CheckBox Name="checkBox3" IsChecked="False"  Content="C#"></CheckBox>
+            <CheckBox Name="checkBox4" IsChecked="False"  Content="SQL"></CheckBox>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Name="question2" Text="2. Какая химическая формула воды?"></TextBlock>
+            <RadioButton Name="radioBtn5" IsChecked="False" GroupName="himia" Content="C2H5OH"></RadioButton>
+            <RadioButton Name="radioBtn6" IsChecked="False" GroupName="himia" Content="H20"></RadioButton>
+            <RadioButton Name="radioBtn7" IsChecked="False" GroupName="himia"  Content="C02"></RadioButton>
+            <RadioButton Name="radioBtn8" IsChecked="False" GroupName="himia"  Content="почему тут вообще вопрос по химии?"></RadioButton>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Name="question3" Text="3. Какой из операторов используется для сравнения в Python?"></TextBlock>
+            <CheckBox Name="checkBox9" IsChecked="False" Content="=="></CheckBox>
+            <CheckBox Name="checkBox10" IsChecked="False" Content="="></CheckBox>
+            <CheckBox Name="checkBox11" IsChecked="False" Content="!"></CheckBox>
+            <CheckBox Name="checkBox12" IsChecked="False"  Content="!="></CheckBox>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Text="4. Вы смешарик?"></TextBlock>
+            <RadioButton Name="radioBtn" GroupName="smeshariki" Content="Конечно я смешарик"></RadioButton>
+            <RadioButton Name="radioBtn2" GroupName="smeshariki" Content="Теперь я смешарик"></RadioButton>
+            <RadioButton Name="radioBtn3" GroupName="smeshariki" Content="Я скачиваю Шарарам"></RadioButton>
+            <RadioButton Name="radioBtn4" GroupName="smeshariki" Content="Кто такие смешарики?"></RadioButton>
+            
+            
+        </StackPanel>
+        <StackPanel>
+            <Button Name="btncheck" Content="Результат" Click="Test"></Button>
+        </StackPanel>
         <!--<Menu Height="20" VerticalAlignment="Top">
             <MenuItem Header="Файл" Click="MenuItem_Click">
                 <MenuItem.Icon>
@@ -22,7 +56,7 @@
             </MenuItem>
 
         </Menu>-->
-        <Button Content="Button" HorizontalAlignment="Left" Margin="196,125,0,0" VerticalAlignment="Top" Width="411" Height="147" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="682,378,0,0" VerticalAlignment="Top" Width="101" Height="33" Click="Button_Click"/>
 
-    </Grid>
+    </StackPanel>
 </Window>

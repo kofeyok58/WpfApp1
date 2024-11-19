@@ -29,6 +29,20 @@ namespace WpfApp1
             window.Show();
         }
 
+        private void Test(object sender, RoutedEventArgs e)
+        {
+            if (checkBox1.IsChecked == true & checkBox2.IsChecked == false & checkBox3.IsChecked == true & checkBox4.IsChecked == false
+                & radioBtn6.IsChecked == true & checkBox9.IsChecked == true & checkBox10.IsChecked == false & checkBox11.IsChecked == false & checkBox12.IsChecked == true &
+                radioBtn.IsChecked == true)
+            {
+                MessageBox.Show("Тест пройден, урааа");
+            }
+            else
+            {
+                MessageBox.Show("Чо то не то");
+            }
+        }
+
         //private void MenuItem_Click(object sender, RoutedEventArgs e)
         //{
         //    Application.Current.Shutdown();
