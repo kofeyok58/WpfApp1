@@ -36,11 +36,16 @@ namespace WpfApp1
                 radioBtn.IsChecked == true)
             {
                 MessageBox.Show("Тест пройден, урааа");
+                Window3 window3 = new Window3();
+                window3.Show();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Чо то не то");
             }
+
+            
         }
 
         //private void MenuItem_Click(object sender, RoutedEventArgs e)

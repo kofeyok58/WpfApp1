@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="800"
+        Background="LightSeaGreen">
     <StackPanel>
         <StackPanel>
             <TextBlock Name="question1" Text="1. Что из этого языки программирования?"></TextBlock>
@@ -35,9 +36,9 @@
             <RadioButton Name="radioBtn2" GroupName="smeshariki" Content="Теперь я смешарик"></RadioButton>
             <RadioButton Name="radioBtn3" GroupName="smeshariki" Content="Я скачиваю Шарарам"></RadioButton>
             <RadioButton Name="radioBtn4" GroupName="smeshariki" Content="Кто такие смешарики?"></RadioButton>
-            
-            
         </StackPanel>
+
+        
         <StackPanel>
             <Button Name="btncheck" Content="Результат" Click="Test"></Button>
         </StackPanel>

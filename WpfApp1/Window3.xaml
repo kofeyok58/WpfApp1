@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800"
+        Background="CadetBlue">
+    <Grid>
+        <!--доп вопросы-->
+        <StackPanel>
+            <TextBox Text="А, ой, ещё вопросы"></TextBox>
+        <StackPanel>
+            <TextBlock Name="question01" Text="1. Кто из них состоит в команде Импровизаторы?"></TextBlock>
+            <CheckBox Name="checkBox01" IsChecked="False" Content="Арсений Попов"></CheckBox>
+            <CheckBox Name="checkBox02" IsChecked="False" Content="Дмитрий Позов"></CheckBox>
+            <CheckBox Name="checkBox03" IsChecked="False"  Content="Сергей Матвиенко"></CheckBox>
+            <CheckBox Name="checkBox04" IsChecked="False"  Content="Антон Шастун"></CheckBox>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Name="question02" Text="2. Какая планета ближе всего к солнцу?"></TextBlock>
+            <RadioButton Name="radioBtn05" IsChecked="False" GroupName="space" Content="Меркурий"></RadioButton>
+            <RadioButton Name="radioBtn06" IsChecked="False" GroupName="space" Content="Земля"></RadioButton>
+            <RadioButton Name="radioBtn07" IsChecked="False" GroupName="space"  Content="Сатурн"></RadioButton>
+            <RadioButton Name="radioBtn08" IsChecked="False" GroupName="space"  Content="Юпитер"></RadioButton>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Name="question03" Text="3. Какие из этих фруктов - цитрусовые?"></TextBlock>
+            <CheckBox Name="checkBox09" IsChecked="False" Content="Апельсин"></CheckBox>
+            <CheckBox Name="checkBox010" IsChecked="False" Content="Яблоко"></CheckBox>
+            <CheckBox Name="checkBox011" IsChecked="False" Content="Лимон"></CheckBox>
+            <CheckBox Name="checkBox012" IsChecked="False"  Content="Банан"></CheckBox>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Name="question04" Text="4. Кто написал Войну и мир"></TextBlock>
+            <RadioButton Name="radioBtn01" GroupName="smeshariki" Content="Лев Толстой"></RadioButton>
+            <RadioButton Name="radioBtn02" GroupName="smeshariki" Content="Антон Чехов"></RadioButton>
+            <RadioButton Name="radioBtn03" GroupName="smeshariki" Content="Федор Достоевский"></RadioButton>
+            <RadioButton Name="radioBtn04" GroupName="smeshariki" Content="Николай Гоголь"></RadioButton>
+        </StackPanel>
+
+            <StackPanel>
+                <Button Name="btncheck" Content="Результат" Click="Test"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
