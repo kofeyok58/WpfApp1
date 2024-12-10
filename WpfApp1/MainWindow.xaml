@@ -21,8 +21,25 @@
             </MenuItem>
 
         </Menu>
+        <TreeView>
+            <TextBlock>Элемент TreeView</TextBlock>
+            <TreeViewItem Header="Языки Программирования">
+                <TreeViewItem Header="Компилируемые">
+                    <TreeViewItem Header="Go" Selected="TreeViewItem_Selected"></TreeViewItem>
+                    <TreeViewItem Header="C" Selected="TreeViewItem_Selected"></TreeViewItem>
+                    <TreeViewItem Header="C++" Selected="TreeViewItem_Selected"></TreeViewItem>
+                    <TreeViewItem Header="Pascal" Selected="TreeViewItem_Selected"></TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="Интерпретируемые">
+                    <TreeViewItem Header="Python" Selected="TreeViewItem_Selected"></TreeViewItem>
+                    <TreeViewItem Header="JavaScript" Selected="TreeViewItem_Selected"></TreeViewItem>
+                    <TreeViewItem Header="Ruby" Selected="TreeViewItem_Selected"></TreeViewItem>
+                    <TreeViewItem Header="PHP" Selected="TreeViewItem_Selected"></TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
         <Button Content="Перейти к тесту" HorizontalAlignment="Left" Margin="655,381,0,0" VerticalAlignment="Top" Width="128" Height="30" Click="Button_Click"/>
-        <Image x:Name="DisplayImageForm" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform">
+        <Image x:Name="DisplayImageForm" Height="242" Width="405" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Margin="278,119,110.333,59.667" >
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
