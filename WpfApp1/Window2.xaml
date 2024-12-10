@@ -42,12 +42,36 @@
             <Button Name="btn0" Content="0" Grid.Row="4"  Grid.Column="1" Click="NumberButton_Click"/>
 
             <Button Name="btnDecemal" Content="." Grid.Row="4" Grid.Column="2" Click="OperationButton_Click"/>
-            <Button Name="btnEquals" Content="=" Grid.Row="0" Grid.Column="4" Click="EqualsButton_Click"/>
-            <Button Name="btnAdd" Content="+" Grid.Row="1" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnRemove" Content="-" Grid.Row="2" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnMuti" Content="x" Grid.Row="3" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnDivis" Content="/" Grid.Row="4" Grid.Column="4" Click="OperationButton_Click"/>
-            <Button Name="btnClear" Content="C" Grid.Row="4" Grid.Column="0" Click="ClearButton_Click"/>
+            <Button Name="btnEquals" Content="=" Grid.Row="0" Grid.Column="4" Click="EqualsButton_Click">
+                <Button.ToolTip>
+                    <ToolTip VerticalOffset="10" HorizontalOffset="10">Результат операции (подвоха нет)</ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnAdd" Content="+" Grid.Row="1" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    <ToolTip VerticalOffset="10" HorizontalOffset="10">Сложение. 3 + 2 = 5</ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnRemove" Content="-" Grid.Row="2" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    <ToolTip VerticalOffset="10" HorizontalOffset="10">Вычитание. 3 - 2 = 1</ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnMuti" Content="x" Grid.Row="3" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    <ToolTip VerticalOffset="10" HorizontalOffset="10">Умножение. 3 x 2 = 6</ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnDivis" Content="/" Grid.Row="4" Grid.Column="4" Click="OperationButton_Click">
+                <Button.ToolTip>
+                    <ToolTip VerticalOffset="10" HorizontalOffset="10">Деление. 3 / 2 = 1.5 </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button Name="btnClear" Content="C" Grid.Row="4" Grid.Column="0" Click="ClearButton_Click">
+                <Button.ToolTip>
+                    <ToolTip VerticalOffset="10" HorizontalOffset="10">Отчистка калькулятора, обнуление</ToolTip>
+                </Button.ToolTip>
+            </Button>
             
 
 
