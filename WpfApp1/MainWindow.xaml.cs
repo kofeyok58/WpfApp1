@@ -102,5 +102,17 @@ namespace WpfApp1
             TreeViewItem treeViewItem = (TreeViewItem)sender;
             MessageBox.Show("Выбран Язык программирования: " + treeViewItem.Header.ToString(), caption:"Выбор языка программирования");
         }
+
+        private void dataPicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DatePicker dataPicker = (DatePicker)sender;
+            MessageBox.Show("Выбрана дата:" + dataPicker.SelectedDate.Value.Date.ToShortDateString());
+        }
+
+        private void celendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Calendar calendar = (Calendar)sender;
+            MessageBox.Show("Выбрана дата:" + calendar.SelectedDate.Value.Date.ToShortDateString());
+        }
     }
 }

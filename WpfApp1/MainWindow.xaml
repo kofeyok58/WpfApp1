@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Menu Height="20" VerticalAlignment="Top">
+        <DatePicker></DatePicker>
+            <Calendar></Calendar>
+            <Menu Height="20" VerticalAlignment="Top">
             <MenuItem Header="Файл" Click="MenuItem_Click">
                 <MenuItem.Icon>
                     <Image Source="C:\Users\user\Downloads\icon.png"></Image>
@@ -21,6 +23,7 @@
             </MenuItem>
 
         </Menu>
+        
         <TreeView>
             <TextBlock>Элемент TreeView</TextBlock>
             <TreeViewItem Header="Языки Программирования">
@@ -38,6 +41,12 @@
                 </TreeViewItem>
             </TreeViewItem>
         </TreeView>
+        <DatePicker Name="dataPicker" SelectedDateChanged="dataPicker_SelectedDateChanged"></DatePicker>
+        <Calendar Name="celendar" SelectedDatesChanged="celendar_SelectedDatesChanged">
+            <Calendar.BlackoutDates>
+                <CalendarDateRange Start="12/1/2024" End="12/10/2024"></CalendarDateRange>
+            </Calendar.BlackoutDates>
+        </Calendar>
         <Button Content="Перейти к тесту" HorizontalAlignment="Left" Margin="655,381,0,0" VerticalAlignment="Top" Width="128" Height="30" Click="Button_Click"/>
         <Image x:Name="DisplayImageForm" Height="242" Width="405" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Margin="278,119,110.333,59.667" >
             <Image.RenderTransform>
